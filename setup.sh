@@ -24,6 +24,8 @@ sudo apt-get install -qy git-core
 echo
 echo "Vim"
 sudo apt-get install -qy vim
+echo "Screen"
+sudo apt-get install -qy screen
 echo
 
 
@@ -50,5 +52,5 @@ echo ""
 
 cd $SETUP_FOLDER
 
-echo "All done! Now PMF!!!\n"
+echo -e "All done! Now PMF!!!\n"
 

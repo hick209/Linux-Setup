@@ -8,9 +8,6 @@
     set tabstop=4
     set expandtab
 
-" Mouse usage
-    set mouse=a
-
 " Make the backspace work properly
     set backspace=2
 
@@ -21,3 +18,7 @@
 " Make sure the syntax highlight is on
     syntax on
 
+" Mouse usage
+if exists('+mouse')
+    set mouse=a
+end
