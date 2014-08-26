@@ -11,10 +11,6 @@
 " Make the backspace work properly
     set backspace=2
 
-" Manage the plugins
-    execute pathogen#infect()
-    filetype plugin indent on
-
 " Make sure the syntax highlight is on
     syntax on
 

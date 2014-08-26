@@ -24,31 +24,8 @@ sudo apt-get install -qy git-core
 echo
 echo "Vim"
 sudo apt-get install -qy vim
-echo "Screen"
-sudo apt-get install -qy screen
 echo
 
-
-# Acquire pathogen.vim, which is a plugin manager for Vim
-echo "Getting the Vim plugin manager, Pathogen..."
-mkdir -p $HOME/.vim/autoload ~/.vim/bundle
-curl -Sso $HOME/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-echo ""
-
-
-# Get a Lint (syntax checker) for scripts in Vim
-echo "Getting the Vim Lint checker..."
-cd $HOME/.vim/bundle
-if [ -d ./syntastic ]
-then
-    # just update
-    cd syntastic
-    git pull
-else
-    # create the repository
-    git clone https://github.com/scrooloose/syntastic.git
-fi
-echo ""
 
 cd $SETUP_FOLDER
 
