@@ -6,7 +6,6 @@
     set smarttab
     set shiftwidth=4
     set tabstop=4
-    set expandtab
 
 " Make the backspace work properly
     set backspace=2
