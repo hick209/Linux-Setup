@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	filemode = false
+	autocrlf = true
 [alias]
 	hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
@@ -11,5 +12,5 @@
 [push]
 	default = matching
 [credential]
-	helper = cache
+	helper = cache --timeout 3600 # in seconds -> 1 hour
 
