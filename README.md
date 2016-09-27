@@ -4,7 +4,7 @@ Linux-Setup
 Configuration files for development environment setup
 
 
-# Usage
+## Usage
 
 Run the file `setup.sh` and enjoy!
 
