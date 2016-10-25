@@ -4,15 +4,16 @@ SETUP_FOLDER=`pwd`
 
 for file in `ls -A $SETUP_FOLDER/dotfiles`
 do
-    echo -n "Setting up $file..."
-    if [ -f $HOME/$file ]
+    echo -n "Setting up $file... "
+    if [ -f $HOME/$file -a ! -L $HOME/$file ]
     then
         # Make sure that existing files don't get overridden
+		echo -n "Backing up $file to ${file}_old... "
         mv $HOME/$file $HOME/${file}_old
     fi
     # creates a link to the file
     ln -sf $SETUP_FOLDER/dotfiles/$file $HOME/$file
-    echo " done!"
+    echo "done!"
 done
 echo
 
