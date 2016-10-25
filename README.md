@@ -10,7 +10,7 @@ Contain configuration dotfiles for:
 - VIM
 
 
-# Usage
+## Usage
 
 Run the file `setup.sh` and enjoy!
 
