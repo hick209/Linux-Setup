@@ -1,7 +1,13 @@
 Linux-Setup
 ===========
 
-Configuration files for development environment setup
+Configuration files for development environment setup.
+
+Contain configuration dotfiles for:
+
+- Bash
+- Git
+- VIM
 
 
 # Usage
