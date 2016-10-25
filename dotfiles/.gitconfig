@@ -1,16 +1,48 @@
 [user]
 	name = Nivaldo Bondanca
 	email = hick209@gmail.com
+
 [core]
 	editor = vim
 	filemode = false
+	ignorecase = false
 	autocrlf = input
+
 [alias]
 	hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ls = ls-files
+	g = grep --extended-regexp --break --heading --line-number
+
 [color]
-	ui = auto
+	ui = true
+	interactive = auto
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "diff"]
+	meta = yellow bold ul
+	frag = cyan bold ul
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+
+[color "branch"]
+	current = green bold
+	local = green
+	remote = red bold
+
+[grep]
+	heading = true
+	lineNumber = true
+
 [push]
 	default = matching
+
 [credential]
 	helper = cache --timeout 3600 # in seconds -> 1 hour
 
