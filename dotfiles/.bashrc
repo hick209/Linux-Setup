@@ -85,3 +85,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias vi='vim'
 
+
+### Git code completion ###
+
+source .git-completion
+
