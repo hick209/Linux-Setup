@@ -12,6 +12,7 @@
 	hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ls = ls-files
 	g = grep --extended-regexp --break --heading --line-number
+	unstage = reset HEAD --
 
 [color]
 	ui = true
