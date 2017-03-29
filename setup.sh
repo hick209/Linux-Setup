@@ -1,6 +1,13 @@
 #!/bin/sh
 
-SETUP_FOLDER=`pwd`
+pwd=`pwd`
+
+cd $(dirname "$0")
+SETUP_FOLDER=`pwd -P`
+
+cd $pwd
+unset pwd
+
 
 for file in `ls -A $SETUP_FOLDER/dotfiles`
 do
@@ -26,9 +33,9 @@ echo
 echo "Vim"
 sudo apt-get install -qy vim
 echo
-
-
-cd $SETUP_FOLDER
+echo "Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo
 
 echo -e "All done! Now PMF!!!\n"
 
