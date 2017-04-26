@@ -85,6 +85,12 @@ alias la='ls -A'
 alias l='ls -CF'
 alias vi='vim'
 
+# git aliases
+alias gco='git checkout'
+alias gst='git status'
+alias gcd='git checkout develop'
+alias gcm='git checkout master'
+
 
 ### Git code completion ###
 
