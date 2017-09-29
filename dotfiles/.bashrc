@@ -87,9 +87,15 @@ alias vi='vim'
 
 # git aliases
 alias gco='git checkout'
-alias gst='git status'
+alias gcb='git checkout -b'
 alias gcd='git checkout develop'
 alias gcm='git checkout master'
+alias gst='git status'
+alias gb='git branch'
+alias gp='git push'
+alias gc='git commit'
+alias gd='git diff'
+alias ga='git add'
 
 
 ### Git code completion ###
