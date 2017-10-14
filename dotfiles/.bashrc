@@ -93,10 +93,10 @@ alias gcm='git checkout master'
 alias gst='git status'
 alias gb='git branch'
 alias gp='git push'
-alias gc='git commit'
+alias gc='git commit -v'
 alias gd='git diff'
 alias ga='git add'
-
+alias gf='git fetch'
 
 ### Git code completion ###
 
